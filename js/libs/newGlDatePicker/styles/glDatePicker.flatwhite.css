@@ -1,0 +1,172 @@
+.gldp-flatwhite {
+	position: absolute;
+	font-family: 'helvetica';
+	float: left;
+	background-color: #F0F4F7;
+	border: 0;
+	-webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+	-moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);	
+}
+
+/* Core style for every cell */
+.gldp-flatwhite .core {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	position: relative;
+	float: left;
+	padding: 0;
+	margin: 0;
+	font-size: 14px;
+	text-align: center;
+	cursor: pointer;
+	color: #222;
+	background: #EAEAEA;
+}
+
+/* Cell border */
+.gldp-flatwhite .border {
+	border-style: solid;
+	border-width: 0;
+	border-color: #fff;
+}
+
+/* Month/Year text and select */
+.gldp-flatwhite .monyear,
+.gldp-flatwhite .monyear select {
+	color: white;
+	line-height: 38px;
+	white-space: nowrap;
+	font-weight: bold;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background: -webkit-gradient(linear, left top, left bottom, from(#006aac), to(#00438d));
+	background: -webkit-linear-gradient(top, #006aac, #00438d);
+	background: -moz-linear-gradient(top, #006aac, #00438d);
+	background: -ms-linear-gradient(top, #006aac, #00438d);
+	background: -o-linear-gradient(top, #006aac, #00438d);
+	background: linear-gradient(top, #006aac, #00438d);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+	-webkit-text-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.65);
+	-moz-text-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.65);
+	text-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.65);
+}
+
+/* Month/Year text */
+.gldp-flatwhite .monyear span {
+	margin: 0 5px 0 5px;
+}
+
+/* Prev/Next arrows */
+.gldp-flatwhite .prev-arrow,
+.gldp-flatwhite .next-arrow {
+	color: #FFF;
+	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.75);
+}
+
+.gldp-flatwhite .prev-arrow:active,
+.gldp-flatwhite .next-arrow:active {
+	color: #000;
+}
+
+.gldp-flatwhite .prev-arrow-off,
+.gldp-flatwhite .next-arrow-off {
+	color: #000;
+	opacity: 0.15;
+}
+
+/* Days of the week */
+.gldp-flatwhite .dow {
+	font-size: 12px;
+	line-height: 20px;
+	color: #666666;
+	font-weight: 500;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f7f7fa), to(#e4e7eb));
+	background: -webkit-linear-gradient(top, #f7f7fa, #e4e7eb);
+	background: -moz-linear-gradient(top, #f7f7fa, #e4e7eb);
+	background: -ms-linear-gradient(top, #f7f7fa, #e4e7eb);
+	background: -o-linear-gradient(top, #f7f7fa, #e4e7eb);
+	background: linear-gradient(top, #f7f7fa, #e4e7eb);
+}
+
+/* Weekdays */
+.gldp-flatwhite .lun,
+.gldp-flatwhite .mar,
+.gldp-flatwhite .mie,
+.gldp-flatwhite .jue,
+.gldp-flatwhite .vie {
+	border-top: 1px solid #ececec;
+	border-left: 1px solid #ececec;
+	font-size: 12px;
+	background:#E9F4FE;
+}
+
+/* Weekend days */
+.gldp-flatwhite .sab,
+.gldp-flatwhite .dom {
+	border-top: 1px solid #ececec;
+	border-left: 1px solid #ececec;
+	font-size: 12px;
+	background: #FFF5F2;
+}
+
+/* Selectable days that are outside of current month being shown */
+.gldp-flatwhite .outday {
+	background-color:#fff;
+	border:solid 1px #fff;
+	color: #DDD;
+	cursor: wait;	
+	/*color: #aaa !important;*/
+}
+
+/* Hover */
+.gldp-flatwhite .lun:hover,
+.gldp-flatwhite .mar:hover,
+.gldp-flatwhite .mie:hover,
+.gldp-flatwhite .jue:hover,
+.gldp-flatwhite .vie:hover,
+.gldp-flatwhite .sab:hover,
+.gldp-flatwhite .dom:hover {
+	background: #eee;
+}
+
+/* Non-Selectable days */
+.gldp-flatwhite .noday {
+	color: #bbb;
+	font-weight: normal;
+	cursor: wait !important;
+	background: #ddd;
+}
+
+/* Currently selected day */
+.gldp-flatwhite .selected {
+	color: #fff;
+	font-weight: bold;
+	border-color: #888;
+	background: #aaa;
+}
+
+/* Today */
+.gldp-flatwhite .today {
+	color: #fff;
+	font-weight: bold;
+	border-color: #000;
+	background: #222;
+}
+
+/* Special */
+.gldp-flatwhite .special {
+	color: #fff;
+	font-weight: bold;
+	border-color: #444;
+	background: #666;
+}
